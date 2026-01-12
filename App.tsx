@@ -8,6 +8,8 @@ import PurchaseSimulator from './components/PurchaseSimulator';
 import CommitmentSection from './components/CommitmentSection';
 import MissionVisionSection from './components/MissionVisionSection';
 import Chatbot from './components/Chatbot';
+import InteractiveLogo from './components/InteractiveLogo';
+
 
 
 
@@ -87,17 +89,17 @@ function App() {
                         transition={{ duration: 0.8 }}
                     >
                         <motion.div
-                            className="flex justify-center mb-6"
+                            className="flex justify-center mb-6 relative"
                             initial={{ scale: 0.8, opacity: 0 }}
                             animate={{ scale: 1, opacity: 1 }}
                             transition={{ delay: 0.2, duration: 0.5 }}
                         >
-                            <img
-                                src="https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/logo-color.png"
-                                alt="Logo Kiana"
-                                className="h-24 md:h-32 w-auto brightness-0 invert"
+                            <InteractiveLogo
+                                mainLogoSrc="https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/logo-color.png"
+                                phraseSrc="https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/color.png"
                             />
                         </motion.div>
+
 
                         <div className="inline-block bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-5 py-2 mb-6 text-white font-semibold text-sm tracking-wider uppercase shadow-lg">
                             Alimentos con cariño

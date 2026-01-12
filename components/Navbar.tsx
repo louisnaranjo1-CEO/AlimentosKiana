@@ -32,7 +32,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenBenefits }) => {
                     <img
                         src="https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/logo-color.png"
                         alt="Alimentos Kiana Logo"
-                        className={`h-12 w-auto transition-all duration-300 ${!isScrolled ? 'brightness-0 invert' : ''}`}
+                        className={`h-12 w-auto transition-all duration-300 drop-shadow-md`}
                     />
                 </a>
 
@@ -60,8 +60,8 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenBenefits }) => {
                     <a
                         href="#contacto"
                         className={`px-5 py-2 rounded-full font-bold text-sm transition-all transform hover:scale-105 ${isScrolled
-                                ? 'bg-kiana-green text-white shadow-lg shadow-green-200'
-                                : 'bg-white text-kiana-green shadow-lg'
+                            ? 'bg-kiana-green text-white shadow-lg shadow-green-200'
+                            : 'bg-white text-kiana-green shadow-lg'
                             }`}
                     >
                         Ser Distribuidor
