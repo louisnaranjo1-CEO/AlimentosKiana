@@ -6,6 +6,8 @@ import BenefitsModal from './components/BenefitsModal';
 import ContactForm from './components/ContactForm';
 import PurchaseSimulator from './components/PurchaseSimulator';
 import CommitmentSection from './components/CommitmentSection';
+import MissionVisionSection from './components/MissionVisionSection';
+
 
 
 import { PRODUCTS, BENEFITS, DISTRIBUTORS, WHATSAPP_NUMBER } from './constants';
@@ -245,6 +247,9 @@ function App() {
                     </div>
                 </div>
             </section>
+
+            {/* MISSION & VISION */}
+            <MissionVisionSection />
 
             {/* COMMITMENT SECTION */}
             <CommitmentSection />
