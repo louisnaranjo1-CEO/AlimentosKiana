@@ -146,8 +146,8 @@ function App() {
                             key={cat}
                             onClick={() => setActiveCategory(cat)}
                             className={`px-6 py-3 rounded-full text-sm font-bold transition-all shadow-sm ${activeCategory === cat
-                                    ? 'bg-kiana-green text-white shadow-green-200 shadow-md transform scale-105'
-                                    : 'bg-white text-gray-500 hover:bg-gray-50 hover:text-kiana-dark border border-gray-200'
+                                ? 'bg-kiana-green text-white shadow-green-200 shadow-md transform scale-105'
+                                : 'bg-white text-gray-500 hover:bg-gray-50 hover:text-kiana-dark border border-gray-200'
                                 }`}
                         >
                             {cat}
@@ -230,94 +230,113 @@ function App() {
             </section>
 
             {/* CLIENTS / DISTRIBUTORS */}
-            <section id="clientes" className="py-20 bg-white">
-                <div className="container mx-auto px-4 text-center">
-                    <h2 className="text-2xl font-heading font-bold text-gray-400 mb-14 uppercase tracking-widest">
-                        Encuéntranos en los mejores comercios
+            <section id="clientes" className="py-20 bg-white overflow-hidden">
+                <div className="container mx-auto px-4 text-center mb-16">
+                    <h2 className="text-2xl font-heading font-bold text-gray-400 uppercase tracking-widest">
+                        Disfruta en tus supermercados favoritos
                     </h2>
+                </div>
 
-                    <div className="flex flex-wrap justify-center gap-6 md:gap-12 opacity-60 hover:opacity-100 transition-opacity duration-500">
-                        {DISTRIBUTORS.map((dist, idx) => (
-                            <div key={idx} className="flex flex-col items-center group cursor-default">
-                                <div className="w-44 h-24 bg-gray-50 rounded-xl flex items-center justify-center border border-gray-100 group-hover:border-kiana-green/30 group-hover:shadow-lg transition-all p-4">
-                                    <span className="font-heading font-bold text-lg text-gray-500 group-hover:text-kiana-dark text-center leading-tight">
+                <div className="relative w-full overflow-hidden">
+                    <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-white to-transparent z-10"></div>
+                    <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-white to-transparent z-10"></div>
+
+                    <motion.div
+                        className="flex gap-12 w-max"
+                        animate={{ x: ["0%", "-50%"] }}
+                        transition={{
+                            duration: 30,
+                            repeat: Infinity,
+                            ease: "linear"
+                        }}
+                        whileHover={{ animationPlayState: 'paused' }} // Note: Framer Motion handles hover pauses differently usually but check css helper
+                        style={{ x: 0 }}
+                    >
+                        {/* Duplicate list for seamless loop */}
+                        {[...DISTRIBUTORS, ...DISTRIBUTORS, ...DISTRIBUTORS].map((dist, idx) => (
+                            <div key={`dist-${idx}`} className="flex flex-col items-center flex-shrink-0 group cursor-default hover:scale-105 transition-transform duration-300">
+                                <div className="w-64 h-32 bg-gray-50 rounded-2xl flex items-center justify-center border border-gray-100 group-hover:border-kiana-green/30 group-hover:shadow-xl transition-all p-6 relative overflow-hidden">
+                                    <div className="absolute inset-0 bg-kiana-green opacity-0 group-hover:opacity-5 transition-opacity duration-500"></div>
+                                    <span className="font-heading font-bold text-xl text-gray-400 group-hover:text-kiana-dark text-center leading-tight">
                                         {dist.name}
                                     </span>
                                 </div>
-                                <span className="text-xs text-gray-400 mt-3 flex items-center gap-1 font-medium">
+                                <span className="text-xs text-gray-400 mt-4 flex items-center gap-1 font-medium bg-gray-100 px-3 py-1 rounded-full">
                                     <MapPin size={10} /> {dist.location}
                                 </span>
                             </div>
                         ))}
-                    </div>
+                    </motion.div>
                 </div>
             </section>
 
-            {/* CONTACT / CTA SECTION */}
-            <section id="contacto" className="py-24 bg-gradient-to-b from-green-50 to-white relative">
-                <div className="container mx-auto px-4">
-                    <div className="text-center mb-12">
-                        <span className="text-kiana-green font-bold tracking-wider uppercase text-sm mb-3 block">
-                            Seamos Aliados
-                        </span>
-                        <h2 className="text-4xl md:text-5xl font-heading font-extrabold text-gray-900 mb-6">
-                            Únete a la familia Kiana
-                        </h2>
-                        <p className="text-gray-600 max-w-xl mx-auto text-lg">
-                            Contacte directamente con nuestra Gerencia Comercial para llevar la fábrica del cariño a su negocio.
-                        </p>
-                    </div>
+        </section>
 
-                    <ContactForm />
+            {/* CONTACT / CTA SECTION */ }
+    <section id="contacto" className="py-24 bg-gradient-to-b from-green-50 to-white relative">
+        <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+                <span className="text-kiana-green font-bold tracking-wider uppercase text-sm mb-3 block">
+                    Seamos Aliados
+                </span>
+                <h2 className="text-4xl md:text-5xl font-heading font-extrabold text-gray-900 mb-6">
+                    Únete a la familia Kiana
+                </h2>
+                <p className="text-gray-600 max-w-xl mx-auto text-lg">
+                    Contacte directamente con nuestra Gerencia Comercial para llevar la fábrica del cariño a su negocio.
+                </p>
+            </div>
 
+            <ContactForm />
+
+        </div>
+    </section>
+
+    {/* FOOTER */ }
+    <footer className="bg-kiana-dark text-white py-16 border-t border-white/10">
+        <div className="container mx-auto px-4">
+            <div className="grid md:grid-cols-4 gap-10 mb-12">
+                <div className="col-span-1 md:col-span-2">
+                    <h3 className="text-3xl font-heading font-extrabold mb-6 tracking-tight">Alimentos Kiana</h3>
+                    <p className="text-gray-200 max-w-sm mb-8 leading-relaxed">
+                        Comprometidos con la inocuidad, la calidad y el amor por lo nuestro. Llevamos nutrición a la mesa del venezolano desde hace más de 26 años.
+                    </p>
                 </div>
-            </section>
 
-            {/* FOOTER */}
-            <footer className="bg-kiana-dark text-white py-16 border-t border-white/10">
-                <div className="container mx-auto px-4">
-                    <div className="grid md:grid-cols-4 gap-10 mb-12">
-                        <div className="col-span-1 md:col-span-2">
-                            <h3 className="text-3xl font-heading font-extrabold mb-6 tracking-tight">Alimentos Kiana</h3>
-                            <p className="text-gray-200 max-w-sm mb-8 leading-relaxed">
-                                Comprometidos con la inocuidad, la calidad y el amor por lo nuestro. Llevamos nutrición a la mesa del venezolano desde hace más de 26 años.
-                            </p>
-                        </div>
-
-                        <div>
-                            <h4 className="font-bold mb-6 text-kiana-yellow text-lg">Ubicación</h4>
-                            <p className="text-gray-200 text-sm leading-7">
-                                Carretera Nacional Vía San Fernando de Apure,<br />
-                                Zona Industrial "El Ique",<br />
-                                Calabozo, Estado Guárico,<br />
-                                Venezuela.
-                            </p>
-                        </div>
-
-                        <div>
-                            <h4 className="font-bold mb-6 text-kiana-yellow text-lg">Contacto Gerencia</h4>
-                            <p className="text-gray-200 text-sm leading-7">
-                                <span className="block mb-2 text-white/60">WhatsApp Oficial:</span>
-                                <a href={`https://wa.me/${WHATSAPP_NUMBER}`} className="text-xl font-bold hover:text-white transition-colors">
-                                    +58 424-353-3131
-                                </a>
-                                <br /><br />
-                                <span className="block mb-1 text-white/60">Correo:</span>
-                                agropecuariakiana@gmail.com
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 gap-4">
-                        <p>&copy; {new Date().getFullYear()} Agropecuaria Kiana C.A. - J-00207338-1. Todos los derechos reservados.</p>
-                        <p className="font-medium">
-                            Página desarrollada por <span className="text-white">Louis Marketing</span>
-                        </p>
-                    </div>
+                <div>
+                    <h4 className="font-bold mb-6 text-kiana-yellow text-lg">Ubicación</h4>
+                    <p className="text-gray-200 text-sm leading-7">
+                        Carretera Nacional Vía San Fernando de Apure,<br />
+                        Zona Industrial "El Ique",<br />
+                        Calabozo, Estado Guárico,<br />
+                        Venezuela.
+                    </p>
                 </div>
-            </footer>
 
-            {/* Modals */}
+                <div>
+                    <h4 className="font-bold mb-6 text-kiana-yellow text-lg">Contacto Gerencia</h4>
+                    <p className="text-gray-200 text-sm leading-7">
+                        <span className="block mb-2 text-white/60">WhatsApp Oficial:</span>
+                        <a href={`https://wa.me/${WHATSAPP_NUMBER}`} className="text-xl font-bold hover:text-white transition-colors">
+                            +58 424-353-3131
+                        </a>
+                        <br /><br />
+                        <span className="block mb-1 text-white/60">Correo:</span>
+                        agropecuariakiana@gmail.com
+                    </p>
+                </div>
+            </div>
+
+            <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 gap-4">
+                <p>&copy; {new Date().getFullYear()} Agropecuaria Kiana C.A. - J-00207338-1. Todos los derechos reservados.</p>
+                <p className="font-medium">
+                    Página desarrollada por <span className="text-white">Louis Marketing</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    {/* Modals */ }
             <ProductModal
                 product={selectedProduct}
                 onClose={() => setSelectedProduct(null)}
@@ -326,7 +345,7 @@ function App() {
                 isOpen={isBenefitsModalOpen}
                 onClose={() => setIsBenefitsModalOpen(false)}
             />
-        </div>
+        </div >
     );
 }
 
