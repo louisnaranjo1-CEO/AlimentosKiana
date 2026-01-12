@@ -334,7 +334,7 @@ function App() {
                                 <img
                                     src="https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/logo-color.png"
                                     alt="Logo Kiana"
-                                    className="h-16 w-auto brightness-0 invert"
+                                    className="h-16 w-auto"
                                 />
                             </div>
                             <p className="text-gray-200 max-w-sm mb-8 leading-relaxed">
@@ -368,9 +368,29 @@ function App() {
 
                     <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 gap-4">
                         <p>&copy; {new Date().getFullYear()} Agropecuaria Kiana C.A. - J-00207338-1. Todos los derechos reservados.</p>
-                        <p className="font-medium">
-                            Página desarrollada por <span className="text-white">Louis Marketing</span>
-                        </p>
+                        <motion.a
+                            href="https://louismarketingve.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group flex flex-col md:flex-row items-center gap-4 p-4 rounded-2xl transition-all relative overflow-hidden bg-white/5 hover:bg-white/10"
+                            whileHover={{ scale: 1.05 }}
+                        >
+                            {/* Glow Effect */}
+                            <div className="absolute inset-0 bg-kiana-green/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+
+                            <img
+                                src="https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/WhatsApp%20Image%202024-01-11%20at%207.57.17%20AM.jpeg"
+                                alt="Louis Marketing"
+                                className="w-16 h-16 rounded-full object-cover border-2 border-kiana-yellow shadow-[0_0_15px_rgba(255,230,0,0.5)] z-10"
+                            />
+
+                            <div className="text-center md:text-left z-10">
+                                <p className="text-lg font-bold text-white group-hover:text-kiana-yellow transition-colors">
+                                    Página desarrollada por <span className="underline decoration-kiana-yellow/50">Louis Marketing</span>
+                                </p>
+                                <p className="text-xs text-gray-400">Transformamos tu visión en realidad digital</p>
+                            </div>
+                        </motion.a>
                     </div>
                 </div>
             </footer>
