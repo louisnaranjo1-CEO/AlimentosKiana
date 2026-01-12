@@ -8,7 +8,11 @@ interface InteractiveLogoProps {
 }
 
 const InteractiveLogo: React.FC<InteractiveLogoProps> = ({ mainLogoSrc, phraseSrc, className = "h-24 md:h-32" }) => {
-    const [isAnimating, setIsAnimating] = useState(false);
+    const [jumpHeight, setJumpHeight] = useState(-140);
+
+    React.useEffect(() => {
+        setJumpHeight(window.innerWidth < 768 ? -70 : -140);
+    }, []);
 
     const handleClick = () => {
         if (isAnimating) return;
@@ -29,7 +33,7 @@ const InteractiveLogo: React.FC<InteractiveLogoProps> = ({ mainLogoSrc, phraseSr
                         animate={{
                             opacity: 1,
                             scale: 1,
-                            y: -140, // Mucho más alto
+                            y: jumpHeight,
                             rotate: [0, -5, 5, 0]
                         }}
                         exit={{ opacity: 0, scale: 0.5, y: 0 }} // Regresa a su posición original detrás

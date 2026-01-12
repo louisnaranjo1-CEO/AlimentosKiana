@@ -16,24 +16,37 @@ const HERO_IMAGES = [
 
 
 const HeroCarousel: React.FC = () => {
+    // Speed up for mobile (approx x3 faster than desktop)
+    // Desktop: 40s, Mobile: 12s
+    const [duration, setDuration] = React.useState(12); // Default to fast mobile speed to avoid slow load
+
+    React.useEffect(() => {
+        const handleResize = () => {
+            setDuration(window.innerWidth < 768 ? 12 : 40);
+        };
+        handleResize(); // Set initial
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
-        <div className="absolute bottom-0 left-0 w-full overflow-hidden z-20 pb-8 pointer-events-none">
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden z-20 pb-4 md:pb-8 pointer-events-none">
             {/* Gradient mask for smooth fade edges */}
-            <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-kiana-dark to-transparent z-10"></div>
-            <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-kiana-dark to-transparent z-10"></div>
+            <div className="absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-kiana-dark to-transparent z-10"></div>
+            <div className="absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-kiana-dark to-transparent z-10"></div>
 
             <motion.div
-                className="flex items-end gap-8 whitespace-nowrap"
+                className="flex items-end gap-3 md:gap-8 whitespace-nowrap"
                 animate={{ x: ["0%", "-50%"] }}
                 transition={{
-                    duration: 40,
+                    duration: duration,
                     repeat: Infinity,
                     ease: "linear"
                 }}
             >
                 {/* Duplicated list for seamless infinite scroll */}
                 {[...HERO_IMAGES, ...HERO_IMAGES].map((src, index) => (
-                    <div key={index} className="flex-shrink-0 w-24 md:w-48 lg:w-56 transform hover:scale-110 transition-transform duration-300">
+                    <div key={index} className="flex-shrink-0 w-20 md:w-48 lg:w-56 transform hover:scale-110 transition-transform duration-300">
                         <img
                             src={src}
                             alt="Producto Kiana"
