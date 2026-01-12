@@ -40,11 +40,22 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) => {
 
                     {/* Left Side: Visuals */}
                     <div className={`md:w-2/5 ${product.imageColor} p-8 flex flex-col items-center justify-center text-center relative`}>
-                        <div className="w-48 h-64 bg-white shadow-2xl rounded-xl flex items-center justify-center mb-6 transform hover:scale-105 transition-transform duration-500">
-                            <span className="font-heading font-extrabold text-2xl text-kiana-dark px-4">
-                                {product.name}
-                            </span>
+                        <div className="w-full max-w-[250px] aspect-[3/4] flex items-center justify-center mb-6 transform hover:scale-110 transition-transform duration-500 drop-shadow-2xl">
+                            {product.image ? (
+                                <img
+                                    src={product.image}
+                                    alt={product.name}
+                                    className="w-full h-full object-contain filter drop-shadow-lg"
+                                />
+                            ) : (
+                                <div className="w-48 h-64 bg-white shadow-2xl rounded-xl flex items-center justify-center">
+                                    <span className="font-heading font-extrabold text-2xl text-kiana-dark px-4">
+                                        {product.name}
+                                    </span>
+                                </div>
+                            )}
                         </div>
+
                         <div className="bg-white/90 backdrop-blur-md rounded-xl p-4 shadow-lg w-full max-w-xs">
                             <div className="flex items-center justify-between text-sm text-gray-600 mb-2 border-b border-gray-200 pb-2">
                                 <span className="flex items-center gap-1"><Scale size={14} /> Presentación</span>
@@ -152,15 +163,26 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) => {
                         )}
 
 
-                        <div className="mt-8 flex justify-end">
+                        <div className="mt-8 flex flex-col sm:flex-row justify-end gap-3">
+                            <button
+                                onClick={() => {
+                                    const message = `Hola Alimentos Kiana, estoy interesado en el producto: *${product.name}*. ¿Podrían darme más información y precios?`;
+                                    window.open(`https://wa.me/584243533131?text=${encodeURIComponent(message)}`, '_blank');
+                                }}
+                                className="bg-kiana-green text-white font-bold py-3 px-6 rounded-xl hover:bg-kiana-dark transition-colors shadow-lg shadow-green-200 flex items-center justify-center gap-2"
+                            >
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" className="w-5 h-5" />
+                                Cotizar en WhatsApp
+                            </button>
                             <button
                                 onClick={onClose}
-                                className="bg-kiana-green text-white font-bold py-3 px-8 rounded-xl hover:bg-kiana-dark transition-colors shadow-lg shadow-green-200"
+                                className="bg-white border border-gray-200 text-gray-600 font-bold py-3 px-6 rounded-xl hover:bg-gray-50 transition-colors"
                             >
-                                Entendido
+                                Cerrar
                             </button>
                         </div>
                     </div>
+
                 </motion.div>
             </div>
         </AnimatePresence>

@@ -63,6 +63,7 @@ export const PRODUCTS: Product[] = [
       vitamins: ["Vitamina A", "Vitamina D", "Tiamina (B1)", "Riboflavina (B2)", "Niacina (B3)", "Piridoxina (B6)", "B12"],
       minerals: ["Calcio", "Hierro", "Zinc", "Fósforo"]
     },
+    image: "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/Lactokiana%20Front.png",
     imageColor: "bg-yellow-100",
     packagingType: "Bolsa 1kg / 500g",
     shelfLife: "12 meses",
@@ -86,6 +87,7 @@ export const PRODUCTS: Product[] = [
       vitamins: ["Vitamina A", "Vitamina C", "Riboflavina (B2)", "Niacina (B3)", "Piridoxina (B6)"],
       minerals: ["Calcio", "Fósforo", "Hierro", "Potasio"]
     },
+    image: "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/Lactokiana%20Maiz%20front.png",
     imageColor: "bg-orange-100",
     packagingType: "Bolsa 1kg",
     shelfLife: "12 meses"
@@ -101,6 +103,7 @@ export const PRODUCTS: Product[] = [
       vitamins: ["Complejo B"],
       minerals: ["Calcio", "Hierro"]
     },
+    image: "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/2%20(2).png",
     imageColor: "bg-pink-200",
     packagingType: "Bolsa 400g",
     shelfLife: "12 meses",
@@ -124,6 +127,7 @@ export const PRODUCTS: Product[] = [
       vitamins: ["Vitamina A", "Vitamina D"],
       minerals: ["Calcio"]
     },
+    image: "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/1%20(2).png",
     imageColor: "bg-yellow-200",
     packagingType: "Bolsa 400g",
     shelfLife: "12 meses"
@@ -140,6 +144,7 @@ export const PRODUCTS: Product[] = [
       vitamins: ["Vitamina A", "Vitamina D"],
       minerals: ["Calcio"]
     },
+    image: "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/3%20(1).png",
     imageColor: "bg-brown-100",
     packagingType: "Bolsa 400g",
     shelfLife: "12 meses"
@@ -156,6 +161,7 @@ export const PRODUCTS: Product[] = [
       vitamins: ["Vitamina A", "Vitamina C", "Vitamina D", "Complejo B"],
       minerals: ["Hierro", "Calcio", "Zinc"]
     },
+    image: "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/Betsy%20front.png",
     imageColor: "bg-green-50",
     packagingType: "Bolsa 500g",
     shelfLife: "12 meses"
@@ -172,6 +178,7 @@ export const PRODUCTS: Product[] = [
       vitamins: ["Vitamina A", "Vitamina D", "Complejo B"],
       minerals: ["Hierro"]
     },
+    image: "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/Fororo%20front.png",
     imageColor: "bg-orange-50",
     packagingType: "Bolsa 500g",
     shelfLife: "12 meses"
@@ -187,6 +194,7 @@ export const PRODUCTS: Product[] = [
       vitamins: ["Vitamina A", "Vitamina D"],
       minerals: ["Calcio"]
     },
+    image: "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/ChocoK%20front.png",
     imageColor: "bg-amber-800",
     packagingType: "Bolsa 500g",
     shelfLife: "12 meses",
@@ -209,6 +217,7 @@ export const PRODUCTS: Product[] = [
       vitamins: ["Vitamina D", "Vitamina A", "Vitamina C"],
       minerals: ["Calcio", "Fósforo"]
     },
+    image: "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/Chicha%20front.png",
     imageColor: "bg-blue-100",
     packagingType: "Bolsa 500g",
     shelfLife: "12 meses",
@@ -219,6 +228,23 @@ export const PRODUCTS: Product[] = [
       ivaPercent: 0.16,
       pvmp: 2.05
     }
+  },
+  {
+    id: "rico-cereal",
+    name: "Rico Cereal",
+    category: ProductCategory.CONSUMER,
+    description: "Cereal de arroz fortificado, especialmente formulado para la alimentación complementaria de bebés a partir de los 6 meses.",
+    features: ["Arroz Fortificado", "Sin Gluten", "Fácil Digestión"],
+    nutritional: {
+      calories: "380 kcal / 100g",
+      protein: "14g / 100g",
+      vitamins: ["Vitamina A", "Vitamina C", "Hierro"],
+      minerals: ["Zinc", "Calcio"]
+    },
+    image: "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/Rico%20Cereal%20front.png",
+    imageColor: "bg-blue-50",
+    packagingType: "Bolsa 500g",
+    shelfLife: "12 meses"
   },
   // SNACKS
   {
@@ -233,6 +259,7 @@ export const PRODUCTS: Product[] = [
       vitamins: ["Vitamina A", "Tiamina (B1)", "Riboflavina (B2)", "Niacina (B3)", "Piridoxina (B6)"],
       minerals: ["Calcio", "Hierro"]
     },
+    image: "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/Bokaditos%20mini-bag.png",
     imageColor: "bg-yellow-400",
     packagingType: "Empaque 35g",
     shelfLife: "6 meses"
@@ -250,6 +277,7 @@ export const PRODUCTS: Product[] = [
       vitamins: ["Niacina (B3)", "Ácido Fólico (B9)"],
       minerals: ["Potasio", "Fósforo"]
     },
+    image: "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/Harina%20Arroz%20Industrial%20front1.png",
     imageColor: "bg-gray-100",
     packagingType: "Saco 35kg",
     shelfLife: "12 meses",

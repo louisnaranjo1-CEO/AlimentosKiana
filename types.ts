@@ -27,6 +27,7 @@ export interface Product {
   description: string;
   features: string[];
   nutritional: NutritionalInfo;
+  image?: string;
   imageColor: string; // Placeholder for image dominant color
   packagingType: string;
   shelfLife: string;
