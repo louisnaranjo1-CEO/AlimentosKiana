@@ -5,6 +5,8 @@ import ProductModal from './components/ProductModal';
 import BenefitsModal from './components/BenefitsModal';
 import ContactForm from './components/ContactForm';
 import PurchaseSimulator from './components/PurchaseSimulator';
+import CommitmentSection from './components/CommitmentSection';
+
 
 import { PRODUCTS, BENEFITS, DISTRIBUTORS, WHATSAPP_NUMBER } from './constants';
 import { ProductCategory, Product } from './types';
@@ -243,6 +245,9 @@ function App() {
                     </div>
                 </div>
             </section>
+
+            {/* COMMITMENT SECTION */}
+            <CommitmentSection />
 
             {/* CLIENTS / DISTRIBUTORS */}
             <section id="clientes" className="py-20 bg-white overflow-hidden">
