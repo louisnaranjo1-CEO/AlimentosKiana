@@ -9,6 +9,7 @@ interface InteractiveLogoProps {
 
 const InteractiveLogo: React.FC<InteractiveLogoProps> = ({ mainLogoSrc, phraseSrc, className = "h-24 md:h-32" }) => {
     const [jumpHeight, setJumpHeight] = useState(-140);
+    const [isAnimating, setIsAnimating] = useState(false);
 
     React.useEffect(() => {
         setJumpHeight(window.innerWidth < 768 ? -70 : -140);
