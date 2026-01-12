@@ -7,6 +7,8 @@ import ContactForm from './components/ContactForm';
 import PurchaseSimulator from './components/PurchaseSimulator';
 import CommitmentSection from './components/CommitmentSection';
 import MissionVisionSection from './components/MissionVisionSection';
+import Chatbot from './components/Chatbot';
+
 
 
 
@@ -378,7 +380,9 @@ function App() {
                 isOpen={isBenefitsModalOpen}
                 onClose={() => setIsBenefitsModalOpen(false)}
             />
+            <Chatbot />
         </div >
+
     );
 }
 
