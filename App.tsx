@@ -78,6 +78,19 @@ function App() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                     >
+                        <motion.div
+                            className="flex justify-center mb-6"
+                            initial={{ scale: 0.8, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            transition={{ delay: 0.2, duration: 0.5 }}
+                        >
+                            <img
+                                src="https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/logo-color.png"
+                                alt="Logo Kiana"
+                                className="h-24 md:h-32 w-auto brightness-0 invert"
+                            />
+                        </motion.div>
+
                         <div className="inline-block bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-5 py-2 mb-6 text-white font-semibold text-sm tracking-wider uppercase shadow-lg">
                             Alimentos con cariño
                         </div>
@@ -297,7 +310,13 @@ function App() {
         <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-4 gap-10 mb-12">
                 <div className="col-span-1 md:col-span-2">
-                    <h3 className="text-3xl font-heading font-extrabold mb-6 tracking-tight">Alimentos Kiana</h3>
+                    <div className="mb-6">
+                        <img
+                            src="https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/logo-color.png"
+                            alt="Logo Kiana"
+                            className="h-16 w-auto brightness-0 invert"
+                        />
+                    </div>
                     <p className="text-gray-200 max-w-sm mb-8 leading-relaxed">
                         Comprometidos con la inocuidad, la calidad y el amor por lo nuestro. Llevamos nutrición a la mesa del venezolano desde hace más de 26 años.
                     </p>
