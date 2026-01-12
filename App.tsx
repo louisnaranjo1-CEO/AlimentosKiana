@@ -379,7 +379,7 @@ function App() {
                             <div className="absolute inset-0 bg-kiana-green/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
                             <img
-                                src="https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/WhatsApp%20Image%202024-01-11%20at%207.57.17%20AM.jpeg"
+                                src="https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/Grupo%2019.png"
                                 alt="Louis Marketing"
                                 className="w-16 h-16 rounded-full object-cover border-2 border-kiana-yellow shadow-[0_0_15px_rgba(255,230,0,0.5)] z-10"
                             />
