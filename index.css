@@ -1,0 +1,17 @@
+/* Main CSS File */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.kiana-gradient {
+    background: linear-gradient(135deg, #009640 0%, #00682b 100%);
+}
