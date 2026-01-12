@@ -11,8 +11,9 @@ const HERO_IMAGES = [
     "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/MERENGON1.png",
     "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/Rico%20Cereal%20front%20a%20(1).png",
     "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/bebida%20instantea.png",
-    "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/Arroz%20Tipo%201%20Front.png"
+    "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/Chicha%20font.png"
 ];
+
 
 const HeroCarousel: React.FC = () => {
     return (
