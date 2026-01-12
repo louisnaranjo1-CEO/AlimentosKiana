@@ -113,6 +113,70 @@ export const PRODUCTS: Product[] = [
     }
   },
   {
+    id: "merengon-mantecado",
+    name: "Merengón Mantecado",
+    category: ProductCategory.CONSUMER,
+    description: "Mezcla instantánea para preparar una deliciosa bebida con sabor a mantecado. ¡Ya contiene azúcar! Solo agrega agua o leche.",
+    features: ["Contiene Azúcar", "Sabor Clásico", "Mezcla y Listo"],
+    nutritional: {
+      calories: "380 kcal / 100g",
+      protein: "8g / 100g",
+      vitamins: ["Vitamina A", "Vitamina D"],
+      minerals: ["Calcio"]
+    },
+    imageColor: "bg-yellow-200",
+    packagingType: "Bolsa 400g",
+    shelfLife: "12 meses"
+  },
+  {
+    id: "merengon-chocolate",
+    name: "Merengón Chocolate",
+    category: ProductCategory.CONSUMER,
+    description: "La energía del chocolate en una bebida instantánea y nutritiva. ¡Ya viene con azúcar! Ideal para la merienda.",
+    features: ["Sabor a Chocolate", "Contiene Azúcar", "Energía Instantánea"],
+    nutritional: {
+      calories: "370 kcal / 100g",
+      protein: "7g / 100g",
+      vitamins: ["Vitamina A", "Vitamina D"],
+      minerals: ["Calcio"]
+    },
+    imageColor: "bg-brown-100",
+    packagingType: "Bolsa 400g",
+    shelfLife: "12 meses"
+  },
+  {
+    id: "betsy",
+    name: "Betsy Crema de Arroz",
+    category: ProductCategory.CONSUMER,
+    description: "Crema de arroz instantánea enriquecida. Suave, digestiva y fortificada con vitaminas y minerales esenciales para el desarrollo.",
+    features: ["Con Vitaminas y Minerales", "Fácil Digestión", "Instantánea"],
+    nutritional: {
+      calories: "Unknown", // Label obscured/generic
+      protein: "7g / 100g",
+      vitamins: ["Vitamina A", "Vitamina C", "Vitamina D", "Complejo B"],
+      minerals: ["Hierro", "Calcio", "Zinc"]
+    },
+    imageColor: "bg-green-50",
+    packagingType: "Bolsa 500g",
+    shelfLife: "12 meses"
+  },
+  {
+    id: "fororo-kiana",
+    name: "Fororo Kiana",
+    category: ProductCategory.CONSUMER,
+    description: "Harina de maíz tostado tradicional. El sabor de siempre con la calidad Kiana. Perfecto para atoles calientes y nutritivos.",
+    features: ["Maíz Tostado", "Tradición Venezolana", "Energía Natural"],
+    nutritional: {
+      calories: "Unknown",
+      protein: "7g / 100g",
+      vitamins: ["Vitamina A", "Vitamina D", "Complejo B"],
+      minerals: ["Hierro"]
+    },
+    imageColor: "bg-orange-50",
+    packagingType: "Bolsa 500g",
+    shelfLife: "12 meses"
+  },
+  {
     id: "choco-k",
     name: "Choco K",
     category: ProductCategory.CONSUMER,
