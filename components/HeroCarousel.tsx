@@ -30,7 +30,7 @@ const HeroCarousel: React.FC = () => {
     }, []);
 
     return (
-        <div className="absolute bottom-0 left-0 w-full overflow-hidden z-20 pb-4 md:pb-8 pointer-events-none">
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden z-20 pb-12 md:pb-8 pointer-events-none">
             {/* Gradient mask for smooth fade edges */}
             <div className="absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-kiana-dark to-transparent z-10"></div>
             <div className="absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-kiana-dark to-transparent z-10"></div>

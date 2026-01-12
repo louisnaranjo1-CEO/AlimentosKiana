@@ -139,14 +139,14 @@ function App() {
 
             {/* STATS / TRUST INDICATORS */}
             <section className="bg-white py-8 md:py-12 shadow-sm relative z-20 -mt-8 rounded-t-[2.5rem] mx-0 md:mx-4 lg:mx-8 border-b border-gray-100">
-                <div className="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center divide-x divide-gray-100">
+                <div className="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center md:divide-x divide-gray-100">
                     {[
                         { label: "Años de Cariño", value: "+26" },
                         { label: "Producción", value: "Industrial" },
                         { label: "Distribución", value: "Directo de la Fábrica" },
                         { label: "Alcance", value: "Nacional" },
                     ].map((stat, i) => (
-                        <div key={i} className="p-2 flex flex-row md:flex-col items-center justify-center gap-2 md:gap-0">
+                        <div key={i} className="p-2 flex flex-col items-center justify-center gap-1">
                             <div className="text-2xl md:text-3xl lg:text-4xl font-heading font-extrabold text-kiana-green text-center leading-tight whitespace-nowrap">{stat.value}</div>
                             <div className="text-xs md:text-sm text-gray-500 font-bold uppercase tracking-wide text-center whitespace-nowrap">{stat.label}</div>
                         </div>
