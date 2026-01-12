@@ -25,22 +25,23 @@ const InteractiveLogo: React.FC<InteractiveLogoProps> = ({ mainLogoSrc, phraseSr
                     <motion.img
                         src={phraseSrc}
                         alt="Frase Kiana"
-                        initial={{ opacity: 0, scale: 0.5, y: 20 }}
+                        initial={{ opacity: 0, scale: 0, y: 20 }}
                         animate={{
                             opacity: 1,
                             scale: 1,
-                            y: -90, // Jump up
-                            rotate: [0, -5, 5, 0] // Wiggle slightly
+                            y: -60, // Menor salto
+                            rotate: [0, -5, 5, 0]
                         }}
-                        exit={{ opacity: 0, scale: 0.5, y: 0 }}
+                        exit={{ opacity: 0, scale: 0, y: 30 }} // Salida hacia abajo desvaneciéndose
                         transition={{
                             type: "spring",
-                            stiffness: 200,
-                            damping: 10,
-                            duration: 0.8
+                            stiffness: 260,
+                            damping: 20,
+                            duration: 0.5
                         }}
-                        className="absolute z-0 w-48 md:w-64 max-w-none pointer-events-none drop-shadow-lg"
+                        className="absolute z-0 w-24 md:w-32 max-w-none pointer-events-none drop-shadow-lg"
                     />
+
                 )}
             </AnimatePresence>
 
