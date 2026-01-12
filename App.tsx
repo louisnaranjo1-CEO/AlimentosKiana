@@ -146,9 +146,9 @@ function App() {
                         { label: "Distribución", value: "Directo de la Fábrica" },
                         { label: "Alcance", value: "Nacional" },
                     ].map((stat, i) => (
-                        <div key={i} className="p-2 flex flex-col items-center">
-                            <div className="text-3xl md:text-4xl font-heading font-extrabold text-kiana-green mb-1 text-center leading-tight">{stat.value}</div>
-                            <div className="text-sm text-gray-500 font-bold uppercase tracking-wide">{stat.label}</div>
+                        <div key={i} className="p-2 flex flex-row md:flex-col items-center justify-center gap-2 md:gap-0">
+                            <div className="text-2xl md:text-3xl lg:text-4xl font-heading font-extrabold text-kiana-green text-center leading-tight whitespace-nowrap">{stat.value}</div>
+                            <div className="text-xs md:text-sm text-gray-500 font-bold uppercase tracking-wide text-center whitespace-nowrap">{stat.label}</div>
                         </div>
                     ))}
                 </div>

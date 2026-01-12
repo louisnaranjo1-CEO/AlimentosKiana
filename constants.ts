@@ -55,8 +55,8 @@ export const PRODUCTS: Product[] = [
     id: "lactokiana-arroz",
     name: "Lactokiana Arroz",
     category: ProductCategory.CONSUMER,
-    description: "Alimento a base de carbohidratos y proteínas con sabor a vainilla. Un abrazo nutritivo ideal para el crecimiento de los niños y el bienestar de los adultos.",
-    features: ["Enriquecido con Vitaminas", "Fácil digestión", "Rendimiento: 1 vaso = 50g"],
+    description: "¡NUESTRO PRODUCTO ESTRELLA! Mezcla nutritiva para bebida a base de Arroz y Soya. Contiene Leche. Un abrazo nutritivo ideal para el crecimiento de los niños y el bienestar de los adultos.",
+    features: ["A base de Arroz y Soya", "Contiene Leche", "Enriquecido con Vitaminas", "Fácil digestión"],
     nutritional: {
       calories: "195 kcal / 50g",
       protein: "6.5g / 50g",
@@ -79,8 +79,8 @@ export const PRODUCTS: Product[] = [
     id: "lactokiana-maiz",
     name: "Lactokiana Maíz Plus+",
     category: ProductCategory.CONSUMER,
-    description: "Mezcla nutritiva a base de maíz y soya con un suave toque de vainilla. Energía sana y deliciosa para compartir en familia.",
-    features: ["Contiene Leche", "Fuente de Proteína Vegetal"],
+    description: "¡SABOR ÚNICO! Mezcla nutritiva a base de Maíz y Soya con un suave toque de vainilla. Contiene Leche. Energía sana y deliciosa para compartir en familia.",
+    features: ["A base de Maíz y Soya", "Contiene Leche", "Fuente de Proteína Vegetal"],
     nutritional: {
       calories: "195 kcal / 50g",
       protein: "7.25g / 50g",
