@@ -240,10 +240,11 @@ function App() {
                         <div className="relative order-1 md:order-2">
                             <div className="absolute inset-0 bg-kiana-green rounded-[2rem] transform rotate-3 opacity-10"></div>
                             <img
-                                src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                src="https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/WhatsApp%20Image%202024-01-11%20at%207.57.17%20AM.jpeg"
                                 alt="Estantería Kiana"
                                 className="rounded-[2rem] shadow-2xl relative z-10 w-full object-cover h-[600px]"
                             />
+
                             {/* Floating Badge */}
                             <div className="absolute bottom-10 -left-6 md:-left-10 bg-white p-6 rounded-2xl shadow-xl z-20 max-w-xs border-l-8 border-kiana-yellow">
                                 <p className="font-bold text-gray-800 text-base">"Alimentos hechos con dedicación para nutrir sonrisas."</p>
