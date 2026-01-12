@@ -107,12 +107,12 @@ function App() {
                             Alimentos con cariño
                         </div>
 
-                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-extrabold mb-6 leading-tight drop-shadow-lg">
+                        <h1 className="text-3xl md:text-6xl lg:text-7xl font-heading font-extrabold mb-4 md:mb-6 leading-tight drop-shadow-lg">
                             El Cariño<br />
                             <span className="text-kiana-yellow drop-shadow-md">a tu Mesa</span>
                         </h1>
 
-                        <p className="text-lg md:text-xl text-gray-100 mb-10 max-w-2xl mx-auto font-medium drop-shadow-md">
+                        <p className="text-base md:text-xl text-gray-100 mb-8 md:mb-10 max-w-2xl mx-auto font-medium drop-shadow-md">
                             Llevamos lo mejor de nuestra tierra a cada hogar. Productos nutritivos, hechos con dedicación en el corazón de Venezuela.
                         </p>
 
@@ -138,8 +138,8 @@ function App() {
 
 
             {/* STATS / TRUST INDICATORS */}
-            <section className="bg-white py-12 shadow-sm relative z-20 -mt-8 rounded-t-[2.5rem] mx-0 md:mx-4 lg:mx-8 border-b border-gray-100">
-                <div className="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-gray-100">
+            <section className="bg-white py-8 md:py-12 shadow-sm relative z-20 -mt-8 rounded-t-[2.5rem] mx-0 md:mx-4 lg:mx-8 border-b border-gray-100">
+                <div className="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center divide-x divide-gray-100">
                     {[
                         { label: "Años de Cariño", value: "+26" },
                         { label: "Producción", value: "Industrial" },
@@ -155,9 +155,9 @@ function App() {
             </section>
 
             {/* CATALOG SECTION */}
-            <section id="catalogo" className="py-24 container mx-auto px-4">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-5xl font-heading font-extrabold text-gray-900 mb-6">Nuestros Productos</h2>
+            <section id="catalogo" className="py-12 md:py-24 container mx-auto px-4">
+                <div className="text-center mb-10 md:mb-16">
+                    <h2 className="text-2xl md:text-5xl font-heading font-extrabold text-gray-900 mb-4 md:mb-6">Nuestros Productos</h2>
                     <p className="text-gray-600 max-w-2xl mx-auto text-lg">
                         Nutrición pensada para cada miembro de la familia. Toca cada producto para conocer sus beneficios.
                     </p>
@@ -180,7 +180,7 @@ function App() {
                 </div>
 
                 {/* Product Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
                     {filteredProducts.map((product) => (
                         <ProductCard
                             key={product.id}
@@ -192,7 +192,7 @@ function App() {
             </section>
 
             {/* VALUE PROPOSITION / BENEFITS */}
-            <section id="beneficios" className="py-24 bg-kiana-light/40 relative overflow-hidden">
+            <section id="beneficios" className="py-12 md:py-24 bg-kiana-light/40 relative overflow-hidden">
                 {/* Background Decorative Blob */}
                 <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-green-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70"></div>
                 <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 bg-yellow-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70"></div>

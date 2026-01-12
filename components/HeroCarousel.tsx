@@ -33,7 +33,7 @@ const HeroCarousel: React.FC = () => {
             >
                 {/* Duplicated list for seamless infinite scroll */}
                 {[...HERO_IMAGES, ...HERO_IMAGES].map((src, index) => (
-                    <div key={index} className="flex-shrink-0 w-32 md:w-48 lg:w-56 transform hover:scale-110 transition-transform duration-300">
+                    <div key={index} className="flex-shrink-0 w-24 md:w-48 lg:w-56 transform hover:scale-110 transition-transform duration-300">
                         <img
                             src={src}
                             alt="Producto Kiana"

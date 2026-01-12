@@ -24,7 +24,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) => {
         </div>
       </div>
 
-      <div className={`h-72 w-full ${product.imageColor} flex items-center justify-center relative p-4 overflow-hidden`}>
+      <div className={`h-56 md:h-72 w-full ${product.imageColor} flex items-center justify-center relative p-4 overflow-hidden`}>
         {/* Product Image or Placeholder */}
         <motion.div
           className="relative z-10 w-full h-full flex items-center justify-center"
@@ -54,10 +54,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) => {
         </div>
       </div>
 
-      <div className="p-6 flex-grow flex flex-col justify-between">
+      <div className="p-4 md:p-6 flex-grow flex flex-col justify-between">
         <div>
           <div className="flex justify-between items-start mb-2">
-            <h3 className="text-xl font-heading font-bold text-gray-800 leading-tight group-hover:text-kiana-green transition-colors">{product.name}</h3>
+            <h3 className="text-lg md:text-xl font-heading font-bold text-gray-800 leading-tight group-hover:text-kiana-green transition-colors">{product.name}</h3>
           </div>
           <p className="text-gray-500 text-sm mb-4 line-clamp-3">{product.description}</p>
 
