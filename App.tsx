@@ -4,6 +4,8 @@ import ProductCard from './components/ProductCard';
 import ProductModal from './components/ProductModal';
 import BenefitsModal from './components/BenefitsModal';
 import ContactForm from './components/ContactForm';
+import PurchaseSimulator from './components/PurchaseSimulator';
+
 import { PRODUCTS, BENEFITS, DISTRIBUTORS, WHATSAPP_NUMBER } from './constants';
 import { ProductCategory, Product } from './types';
 import { ChevronDown, TrendingUp, CheckCircle2, Factory, MapPin } from 'lucide-react';
@@ -283,79 +285,81 @@ function App() {
                 </div>
             </section>
 
-        </section>
+            {/* PURCHASE SIMULATOR */}
+            <PurchaseSimulator />
 
-            {/* CONTACT / CTA SECTION */ }
-    <section id="contacto" className="py-24 bg-gradient-to-b from-green-50 to-white relative">
-        <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-                <span className="text-kiana-green font-bold tracking-wider uppercase text-sm mb-3 block">
-                    Seamos Aliados
-                </span>
-                <h2 className="text-4xl md:text-5xl font-heading font-extrabold text-gray-900 mb-6">
-                    Únete a la familia Kiana
-                </h2>
-                <p className="text-gray-600 max-w-xl mx-auto text-lg">
-                    Contacte directamente con nuestra Gerencia Comercial para llevar la fábrica del cariño a su negocio.
-                </p>
-            </div>
+            {/* CONTACT / CTA SECTION */}
 
-            <ContactForm />
-
-        </div>
-    </section>
-
-    {/* FOOTER */ }
-    <footer className="bg-kiana-dark text-white py-16 border-t border-white/10">
-        <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-4 gap-10 mb-12">
-                <div className="col-span-1 md:col-span-2">
-                    <div className="mb-6">
-                        <img
-                            src="https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/logo-color.png"
-                            alt="Logo Kiana"
-                            className="h-16 w-auto brightness-0 invert"
-                        />
+            <section id="contacto" className="py-24 bg-gradient-to-b from-green-50 to-white relative">
+                <div className="container mx-auto px-4">
+                    <div className="text-center mb-12">
+                        <span className="text-kiana-green font-bold tracking-wider uppercase text-sm mb-3 block">
+                            Seamos Aliados
+                        </span>
+                        <h2 className="text-4xl md:text-5xl font-heading font-extrabold text-gray-900 mb-6">
+                            Únete a la familia Kiana
+                        </h2>
+                        <p className="text-gray-600 max-w-xl mx-auto text-lg">
+                            Contacte directamente con nuestra Gerencia Comercial para llevar la fábrica del cariño a su negocio.
+                        </p>
                     </div>
-                    <p className="text-gray-200 max-w-sm mb-8 leading-relaxed">
-                        Comprometidos con la inocuidad, la calidad y el amor por lo nuestro. Llevamos nutrición a la mesa del venezolano desde hace más de 26 años.
-                    </p>
+
+                    <ContactForm />
+
                 </div>
+            </section>
 
-                <div>
-                    <h4 className="font-bold mb-6 text-kiana-yellow text-lg">Ubicación</h4>
-                    <p className="text-gray-200 text-sm leading-7">
-                        Carretera Nacional Vía San Fernando de Apure,<br />
-                        Zona Industrial "El Ique",<br />
-                        Calabozo, Estado Guárico,<br />
-                        Venezuela.
-                    </p>
+            {/* FOOTER */}
+            <footer className="bg-kiana-dark text-white py-16 border-t border-white/10">
+                <div className="container mx-auto px-4">
+                    <div className="grid md:grid-cols-4 gap-10 mb-12">
+                        <div className="col-span-1 md:col-span-2">
+                            <div className="mb-6">
+                                <img
+                                    src="https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/logo-color.png"
+                                    alt="Logo Kiana"
+                                    className="h-16 w-auto brightness-0 invert"
+                                />
+                            </div>
+                            <p className="text-gray-200 max-w-sm mb-8 leading-relaxed">
+                                Comprometidos con la inocuidad, la calidad y el amor por lo nuestro. Llevamos nutrición a la mesa del venezolano desde hace más de 26 años.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4 className="font-bold mb-6 text-kiana-yellow text-lg">Ubicación</h4>
+                            <p className="text-gray-200 text-sm leading-7">
+                                Carretera Nacional Vía San Fernando de Apure,<br />
+                                Zona Industrial "El Ique",<br />
+                                Calabozo, Estado Guárico,<br />
+                                Venezuela.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4 className="font-bold mb-6 text-kiana-yellow text-lg">Contacto Gerencia</h4>
+                            <p className="text-gray-200 text-sm leading-7">
+                                <span className="block mb-2 text-white/60">WhatsApp Oficial:</span>
+                                <a href={`https://wa.me/${WHATSAPP_NUMBER}`} className="text-xl font-bold hover:text-white transition-colors">
+                                    +58 424-353-3131
+                                </a>
+                                <br /><br />
+                                <span className="block mb-1 text-white/60">Correo:</span>
+                                agropecuariakiana@gmail.com
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 gap-4">
+                        <p>&copy; {new Date().getFullYear()} Agropecuaria Kiana C.A. - J-00207338-1. Todos los derechos reservados.</p>
+                        <p className="font-medium">
+                            Página desarrollada por <span className="text-white">Louis Marketing</span>
+                        </p>
+                    </div>
                 </div>
+            </footer>
 
-                <div>
-                    <h4 className="font-bold mb-6 text-kiana-yellow text-lg">Contacto Gerencia</h4>
-                    <p className="text-gray-200 text-sm leading-7">
-                        <span className="block mb-2 text-white/60">WhatsApp Oficial:</span>
-                        <a href={`https://wa.me/${WHATSAPP_NUMBER}`} className="text-xl font-bold hover:text-white transition-colors">
-                            +58 424-353-3131
-                        </a>
-                        <br /><br />
-                        <span className="block mb-1 text-white/60">Correo:</span>
-                        agropecuariakiana@gmail.com
-                    </p>
-                </div>
-            </div>
-
-            <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 gap-4">
-                <p>&copy; {new Date().getFullYear()} Agropecuaria Kiana C.A. - J-00207338-1. Todos los derechos reservados.</p>
-                <p className="font-medium">
-                    Página desarrollada por <span className="text-white">Louis Marketing</span>
-                </p>
-            </div>
-        </div>
-    </footer>
-
-    {/* Modals */ }
+            {/* Modals */}
             <ProductModal
                 product={selectedProduct}
                 onClose={() => setSelectedProduct(null)}

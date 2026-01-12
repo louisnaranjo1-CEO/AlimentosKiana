@@ -65,7 +65,14 @@ export const PRODUCTS: Product[] = [
     },
     imageColor: "bg-yellow-100",
     packagingType: "Bolsa 1kg / 500g",
-    shelfLife: "12 meses"
+    shelfLife: "12 meses",
+    pricing: {
+      pricePerUnit: 2.65,
+      pricePerBulto: 63.65,
+      unitsPerBulto: 24,
+      ivaPercent: 0.16,
+      pvmp: 3.45
+    }
   },
   {
     id: "lactokiana-maiz",
@@ -96,7 +103,14 @@ export const PRODUCTS: Product[] = [
     },
     imageColor: "bg-pink-200",
     packagingType: "Bolsa 400g",
-    shelfLife: "12 meses"
+    shelfLife: "12 meses",
+    pricing: {
+      pricePerUnit: 1.55,
+      pricePerBulto: 37.21,
+      unitsPerBulto: 24,
+      ivaPercent: 0.16,
+      pvmp: 2.02
+    }
   },
   {
     id: "choco-k",
@@ -111,7 +125,14 @@ export const PRODUCTS: Product[] = [
     },
     imageColor: "bg-amber-800",
     packagingType: "Bolsa 500g",
-    shelfLife: "12 meses"
+    shelfLife: "12 meses",
+    pricing: {
+      pricePerUnit: 3.80,
+      pricePerBulto: 91.21,
+      unitsPerBulto: 24,
+      ivaPercent: 0.16,
+      pvmp: 4.94
+    }
   },
   {
     id: "chi-cha",
@@ -126,7 +147,14 @@ export const PRODUCTS: Product[] = [
     },
     imageColor: "bg-blue-100",
     packagingType: "Bolsa 500g",
-    shelfLife: "12 meses"
+    shelfLife: "12 meses",
+    pricing: {
+      pricePerUnit: 1.58, // FORORO Reference
+      pricePerBulto: 37.85,
+      unitsPerBulto: 24,
+      ivaPercent: 0.16,
+      pvmp: 2.05
+    }
   },
   // SNACKS
   {
@@ -160,7 +188,14 @@ export const PRODUCTS: Product[] = [
     },
     imageColor: "bg-gray-100",
     packagingType: "Saco 35kg",
-    shelfLife: "12 meses"
+    shelfLife: "12 meses",
+    pricing: {
+      pricePerUnit: 1.27,
+      pricePerBulto: 50.80,
+      unitsPerBulto: 40,
+      ivaPercent: 0.16,
+      pvmp: 2.03
+    }
   },
   {
     id: "harina-maiz",
@@ -176,7 +211,14 @@ export const PRODUCTS: Product[] = [
     },
     imageColor: "bg-yellow-300",
     packagingType: "Saco 35kg",
-    shelfLife: "12 meses"
+    shelfLife: "12 meses",
+    pricing: {
+      pricePerUnit: 1.23,
+      pricePerBulto: 43.05,
+      unitsPerBulto: 35,
+      ivaPercent: 0.16,
+      pvmp: 1.97
+    }
   }
 ];
 

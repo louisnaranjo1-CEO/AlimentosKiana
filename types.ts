@@ -5,6 +5,15 @@ export interface NutritionalInfo {
   minerals: string[];
 }
 
+export interface PricingInfo {
+  pricePerUnit: number;
+  pricePerBulto: number;
+  unitsPerBulto: number;
+  ivaPercent: number; // 0.16 usually
+  pvmp?: number; // Sugerido
+}
+
+
 export enum ProductCategory {
   INDUSTRIAL = "Harinas Industriales",
   CONSUMER = "Consumo Masivo",
@@ -22,7 +31,9 @@ export interface Product {
   packagingType: string;
   shelfLife: string;
   isNew?: boolean;
+  pricing?: PricingInfo;
 }
+
 
 export interface Distributor {
   name: string;
