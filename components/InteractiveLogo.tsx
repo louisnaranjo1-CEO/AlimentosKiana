@@ -29,14 +29,14 @@ const InteractiveLogo: React.FC<InteractiveLogoProps> = ({ mainLogoSrc, phraseSr
                         animate={{
                             opacity: 1,
                             scale: 1,
-                            y: -60, // Menor salto
+                            y: -140, // Mucho más alto
                             rotate: [0, -5, 5, 0]
                         }}
-                        exit={{ opacity: 0, scale: 0, y: 30 }} // Salida hacia abajo desvaneciéndose
+                        exit={{ opacity: 0, scale: 0.5, y: 0 }} // Regresa a su posición original detrás
                         transition={{
                             type: "spring",
-                            stiffness: 260,
-                            damping: 20,
+                            stiffness: 180,
+                            damping: 12,
                             duration: 0.5
                         }}
                         className="absolute z-0 w-24 md:w-32 max-w-none pointer-events-none drop-shadow-lg"

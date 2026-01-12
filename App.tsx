@@ -96,7 +96,7 @@ function App() {
                         >
                             <InteractiveLogo
                                 mainLogoSrc="https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/logo-color.png"
-                                phraseSrc="https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/color.png"
+                                phraseSrc="https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/color%20(1).png"
                             />
                         </motion.div>
 
