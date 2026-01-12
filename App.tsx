@@ -9,6 +9,8 @@ import CommitmentSection from './components/CommitmentSection';
 import MissionVisionSection from './components/MissionVisionSection';
 import Chatbot from './components/Chatbot';
 import InteractiveLogo from './components/InteractiveLogo';
+import HeroCarousel from './components/HeroCarousel';
+
 
 
 
@@ -131,10 +133,9 @@ function App() {
                     </motion.div>
                 </div>
 
-                <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-                    <ChevronDown className="text-white opacity-80" size={32} />
-                </div>
+                <HeroCarousel />
             </header>
+
 
             {/* STATS / TRUST INDICATORS */}
             <section className="bg-white py-12 shadow-sm relative z-20 -mt-8 rounded-t-[2.5rem] mx-0 md:mx-4 lg:mx-8 border-b border-gray-100">
