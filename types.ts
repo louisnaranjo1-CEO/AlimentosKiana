@@ -1,0 +1,31 @@
+export interface NutritionalInfo {
+  protein?: string;
+  calories?: string;
+  vitamins: string[];
+  minerals: string[];
+}
+
+export enum ProductCategory {
+  INDUSTRIAL = "Harinas Industriales",
+  CONSUMER = "Consumo Masivo",
+  SNACKS = "Snacks y Complementos"
+}
+
+export interface Product {
+  id: string;
+  name: string;
+  category: ProductCategory;
+  description: string;
+  features: string[];
+  nutritional: NutritionalInfo;
+  imageColor: string; // Placeholder for image dominant color
+  packagingType: string;
+  shelfLife: string;
+  isNew?: boolean;
+}
+
+export interface Distributor {
+  name: string;
+  location: string;
+  type: 'Supermercado' | 'Mayorista' | 'Institucional';
+}
