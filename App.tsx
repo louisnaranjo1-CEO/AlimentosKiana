@@ -314,7 +314,11 @@ function App() {
                 <div className="container mx-auto px-4">
                     <div className="grid md:grid-cols-4 gap-10 mb-12">
                         <div className="col-span-1 md:col-span-2">
-                            <h3 className="text-3xl font-heading font-extrabold mb-6 tracking-tight">Alimentos Kiana</h3>
+                            <img
+                                src="https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/logo-color.png"
+                                alt="Alimentos Kiana"
+                                className="h-16 w-auto object-contain mb-6 brightness-0 invert"
+                            />
                             <p className="text-gray-200 max-w-sm mb-8 leading-relaxed">
                                 Comprometidos con la inocuidad, la calidad y el amor por lo nuestro. Llevamos nutrición a la mesa del venezolano desde hace más de 26 años.
                             </p>
