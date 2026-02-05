@@ -113,7 +113,7 @@ function App() {
                         <img
                             src="https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/logo-color.png"
                             alt="Alimentos Kiana Logo"
-                            className="bg-white/90 rounded-full p-4 mx-auto mb-6 h-32 w-32 object-contain shadow-2xl"
+                            className="mx-auto mb-10 h-48 md:h-64 w-auto object-contain"
                         />
 
                         <div className="inline-block bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-5 py-2 mb-4 text-white font-semibold text-sm tracking-wider uppercase shadow-lg">
