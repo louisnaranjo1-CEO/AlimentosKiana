@@ -87,14 +87,44 @@ export const PRODUCTS: Product[] = [
     id: "merengon-fresa",
     name: "Merengón Fresa",
     category: ProductCategory.CONSUMER,
-    description: "Bebida instantánea con el dulce sabor de la fresa. Lista para disfrutar, fortificada con el cariño que merecen los pequeños de la casa.",
-    features: ["Sabor Intenso", "Instantáneo", "Fortificado"],
+    description: "Bebida instantánea con el dulce sabor de la fresa. Lista para disfrutar, fortificada con el cariño que merecen los pequeños de la casa. Contiene azúcar.",
+    features: ["Contiene Azúcar", "Sabor Intenso", "Instantáneo", "Fortificado"],
     nutritional: {
       protein: "9g / 100g",
       vitamins: ["Complejo B"],
       minerals: ["Calcio", "Hierro"]
     },
     imageColor: "bg-pink-200",
+    packagingType: "Bolsa 400g",
+    shelfLife: "12 meses"
+  },
+  {
+    id: "merengon-mantecado",
+    name: "Merengón Mantecado",
+    category: ProductCategory.CONSUMER,
+    description: "Mezcla instantánea para preparar bebida sabor a mantecado. Contiene azúcar.",
+    features: ["Contiene Azúcar", "Mezcla y Listo", "Instantáneo"],
+    nutritional: {
+      calories: "380 kcal",
+      protein: "8g",
+      carbs: "86g"
+    },
+    imageColor: "bg-yellow-50",
+    packagingType: "Bolsa 400g",
+    shelfLife: "12 meses"
+  },
+  {
+    id: "merengon-chocolate",
+    name: "Merengón Chocolate",
+    category: ProductCategory.CONSUMER,
+    description: "Mezcla instantánea para preparar bebida sabor a chocolate. Contiene azúcar.",
+    features: ["Contiene Azúcar", "Sabor a Cacao", "Instantáneo"],
+    nutritional: {
+      calories: "370 kcal",
+      protein: "7g",
+      carbs: "86g"
+    },
+    imageColor: "bg-amber-100",
     packagingType: "Bolsa 400g",
     shelfLife: "12 meses"
   },
@@ -115,16 +145,46 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "chi-cha",
-    name: "Chi Cha",
+    name: "ChiCha",
     category: ProductCategory.CONSUMER,
     description: "Mezcla para preparar la tradicional chicha de arroz venezolana. Cremosa, dulce y con ese sabor a hogar que nos une.",
-    features: ["Espesa y Cremosa", "Con Canela", "Rinde más"],
+    features: ["Espesa y Cremosa", "Rinde más", "Instantáneo"],
     nutritional: {
       protein: "7g / 100g",
       vitamins: ["Vitamina D", "Vitamina A", "Vitamina C"],
       minerals: ["Calcio", "Fósforo"]
     },
     imageColor: "bg-blue-100",
+    packagingType: "Bolsa 500g",
+    shelfLife: "12 meses"
+  },
+  {
+    id: "fororo",
+    name: "Fororo",
+    category: ProductCategory.CONSUMER,
+    description: "Harina de maíz. Alimento tradicional, nutritivo y versátil para toda la familia.",
+    features: ["100% Maíz", "Sin Tostado", "Rico en vitaminas"],
+    nutritional: {
+      protein: "7g",
+      carbs: "81.2g",
+      iron: "15mg"
+    },
+    imageColor: "bg-orange-200",
+    packagingType: "Bolsa 500g",
+    shelfLife: "12 meses"
+  },
+  {
+    id: "betsy",
+    name: "Betsy",
+    category: ProductCategory.CONSUMER,
+    description: "Crema de arroz instantánea enriquecida para los más pequeños. Mezcla y listo.",
+    features: ["Con Vitaminas", "Rápida preparación", "Hipoalergénico"],
+    nutritional: {
+      protein: "7g",
+      carbs: "81.2g",
+      vitamins: ["A", "D", "C"]
+    },
+    imageColor: "bg-green-100",
     packagingType: "Bolsa 500g",
     shelfLife: "12 meses"
   },
@@ -150,7 +210,7 @@ export const PRODUCTS: Product[] = [
     id: "harina-arroz-precocida",
     name: "Harina de Arroz Precocida",
     category: ProductCategory.INDUSTRIAL,
-    description: "Ingrediente noble y versátil. La base perfecta para crear alimentos suaves y digestivos, desde papillas hasta bebidas.",
+    description: "Uso previsto: Base para papillas, bebidas y repostería. Materia prima de alta calidad. Caducidad: 6 meses.",
     features: ["100% Natural", "Alta absorción", "Hipoalergénica"],
     nutritional: {
       calories: "366 Kcal",
@@ -160,13 +220,13 @@ export const PRODUCTS: Product[] = [
     },
     imageColor: "bg-gray-100",
     packagingType: "Saco 35kg",
-    shelfLife: "12 meses"
+    shelfLife: "6 meses"
   },
   {
     id: "harina-maiz",
     name: "Harina de Maíz Kiana",
     category: ProductCategory.INDUSTRIAL,
-    description: "Maíz seleccionado y molido con esmero. La materia prima esencial que garantiza calidad y color en sus preparaciones.",
+    description: "Uso previsto: Materia prima esencial para la industria alimentaria. Garantiza calidad y color. Caducidad: 6 meses.",
     features: ["Color Amarillo Intenso", "Granulometría uniforme"],
     nutritional: {
       calories: "370 Kcal",
@@ -176,7 +236,7 @@ export const PRODUCTS: Product[] = [
     },
     imageColor: "bg-yellow-300",
     packagingType: "Saco 35kg",
-    shelfLife: "12 meses"
+    shelfLife: "6 meses"
   }
 ];
 

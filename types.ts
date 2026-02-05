@@ -1,8 +1,10 @@
 export interface NutritionalInfo {
   protein?: string;
   calories?: string;
-  vitamins: string[];
-  minerals: string[];
+  carbs?: string;
+  iron?: string;
+  vitamins?: string[];
+  minerals?: string[];
 }
 
 export enum ProductCategory {
