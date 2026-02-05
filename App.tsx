@@ -4,6 +4,7 @@ import ProductCard from './components/ProductCard';
 import ProductModal from './components/ProductModal';
 import BenefitsModal from './components/BenefitsModal';
 import ContactForm from './components/ContactForm';
+import ProductShowcase from './components/ProductShowcase';
 // import { PRODUCTS, BENEFITS, DISTRIBUTORS, WHATSAPP_NUMBER } from './constants';
 import { ProductCategory, Product, Distributor } from './types';
 import { ChevronDown, TrendingUp, CheckCircle2, Factory, MapPin, Truck, Award, Heart, Loader2 } from 'lucide-react';
@@ -167,6 +168,11 @@ function App() {
                     ))}
                 </div>
             </section>
+
+
+
+            {/* PRODUCT SHOWCASE MARQUEE */}
+            <ProductShowcase />
 
             {/* CATALOG SECTION */}
             <section id="catalogo" className="py-24 container mx-auto px-4">
@@ -366,7 +372,7 @@ function App() {
                 isOpen={isBenefitsModalOpen}
                 onClose={() => setIsBenefitsModalOpen(false)}
             />
-        </div>
+        </div >
     );
 }
 
