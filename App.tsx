@@ -84,41 +84,6 @@ function App() {
 
     const categories = ['Todos', ...Object.values(ProductCategory)];
 
-    if (!isSupabaseConfigured) {
-        return (
-            <div className="h-screen w-full flex flex-col items-center justify-center bg-white p-6 text-center">
-                <div className="bg-red-50 p-10 rounded-[2rem] border-2 border-red-100 max-w-2xl shadow-xl">
-                    <img
-                        src="https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/logo-color.png"
-                        alt="Kiana"
-                        className="h-20 w-auto mx-auto mb-8 grayscale opacity-50"
-                    />
-                    <h1 className="text-3xl font-heading font-extrabold text-red-600 mb-4">Error de Configuración</h1>
-                    <p className="text-gray-700 text-lg mb-8 leading-relaxed">
-                        No se han configurado las credenciales de <strong>Supabase</strong> en el panel de Cloudflare.
-                        Por seguridad, estas claves no se suben a GitHub.
-                    </p>
-                    <div className="bg-white p-6 rounded-2xl text-left border border-red-100 shadow-sm mb-8">
-                        <h4 className="font-bold text-gray-900 mb-3">Sigue estos pasos en Cloudflare:</h4>
-                        <ol className="list-decimal list-inside space-y-3 text-sm text-gray-600">
-                            <li>Ve a tu proyecto en el panel de <strong>Cloudflare Pages</strong>.</li>
-                            <li>Entra en <strong>Settings</strong> (Ajustes) {">"} <strong>Environment variables</strong>.</li>
-                            <li>Añade dos variables bajo "Production":
-                                <ul className="mt-2 ml-6 space-y-1 font-mono text-xs bg-gray-50 p-2 rounded">
-                                    <li><span className="text-kiana-green">VITE_SUPABASE_URL</span></li>
-                                    <li><span className="text-kiana-green">VITE_SUPABASE_ANON_KEY</span></li>
-                                </ul>
-                            </li>
-                            <li>Vuelve a desplegar (Retry deployment) tu sitio.</li>
-                        </ol>
-                    </div>
-                    <p className="text-gray-400 text-sm italic">
-                        Una vez configuradas, la página cargará automáticamente tus productos.
-                    </p>
-                </div>
-            </div>
-        );
-    }
 
     if (loading) {
         return (
