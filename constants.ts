@@ -90,7 +90,7 @@ export const PRODUCTS: Product[] = [
     description: "Bebida instantánea con el dulce sabor de la fresa. Lista para disfrutar, fortificada con el cariño que merecen los pequeños de la casa. Contiene azúcar.",
     features: ["Contiene Azúcar", "Sabor Intenso", "Instantáneo", "Fortificado"],
     nutritional: {
-      protein: "9g / 100g",
+      protein: "9g",
       vitamins: ["Complejo B"],
       minerals: ["Calcio", "Hierro"]
     },
@@ -129,29 +129,29 @@ export const PRODUCTS: Product[] = [
     shelfLife: "12 meses"
   },
   {
-    id: "choco-k",
-    name: "Choco K",
+    id: "rico-cereal",
+    name: "Rico Cereal Arroz",
     category: ProductCategory.CONSUMER,
-    description: "Bebida instantánea a base de cacao y leche. El compañero perfecto para desayunos llenos de alegría y energía.",
-    features: ["Contiene Leche y Azúcar", "Frío o Caliente", "Energía para la mañana"],
+    description: "Línea de cereales infantiles. Alimento instantáneo especial para bebés a partir de los 6 meses. Enriquecido con vitaminas y minerales.",
+    features: ["Especial para bebés", "Desde los 6 meses", "Instantáneo", "Fortificado"],
     nutritional: {
-      protein: "8g / 100g",
-      vitamins: ["Vitamina A", "Vitamina D"],
-      minerals: ["Calcio"]
+      protein: "14g",
+      vitamins: ["A", "C", "B1", "B2", "B3", "B6", "B9", "B12", "D", "K"],
+      minerals: ["Hierro", "Calcio", "Fósforo", "Zinc"]
     },
-    imageColor: "bg-amber-800",
+    imageColor: "bg-blue-50",
     packagingType: "Bolsa 500g",
     shelfLife: "12 meses"
   },
   {
-    id: "chi-cha",
-    name: "ChiCha",
+    id: "rica-avena-vainilla",
+    name: "Rica Avena Vainilla",
     category: ProductCategory.CONSUMER,
-    description: "Mezcla para preparar la tradicional chicha de arroz venezolana. Cremosa, dulce y con ese sabor a hogar que nos une.",
-    features: ["Espesa y Cremosa", "Rinde más", "Instantáneo"],
+    description: "Bebida instantánea a base de avena y sólidos lácteos. Contiene leche y azúcar.",
+    features: ["Contiene Leche y Azúcar", "Instantáneo", "Fácil de preparar"],
     nutritional: {
-      protein: "7g / 100g",
-      vitamins: ["Vitamina D", "Vitamina A", "Vitamina C"],
+      protein: "14g",
+      vitamins: ["A"],
       minerals: ["Calcio", "Fósforo"]
     },
     imageColor: "bg-blue-100",
@@ -159,15 +159,30 @@ export const PRODUCTS: Product[] = [
     shelfLife: "12 meses"
   },
   {
+    id: "rica-avena-fresa",
+    name: "Rica Avena Fresa",
+    category: ProductCategory.CONSUMER,
+    description: "Bebida instantánea a base de avena y sólidos lácteos con sabor a fresa. Contiene leche y azúcar.",
+    features: ["Contiene Leche y Azúcar", "Instantáneo", "Sabor a Fresa"],
+    nutritional: {
+      protein: "14g",
+      vitamins: ["A"],
+      minerals: ["Calcio", "Fósforo"]
+    },
+    imageColor: "bg-pink-100",
+    packagingType: "Bolsa 400g",
+    shelfLife: "12 meses"
+  },
+  {
     id: "fororo",
     name: "Fororo",
     category: ProductCategory.CONSUMER,
-    description: "Harina de maíz. Alimento tradicional, nutritivo y versátil para toda la familia.",
-    features: ["100% Maíz", "Sin Tostado", "Rico en vitaminas"],
+    description: "Harina de maíz tostado. Bebida nutritiva a base de maíz seleccionado, enriquecida con vitaminas y minerales.",
+    features: ["100% Maíz", "Enriquecido", "Instantáneo"],
     nutritional: {
-      protein: "7g",
-      carbs: "81.2g",
-      iron: "15mg"
+      protein: "14g",
+      vitamins: ["A", "C", "B1", "B2", "B3", "B6", "B9", "B12", "D"],
+      minerals: ["Hierro", "Calcio", "Fósforo", "Zinc"]
     },
     imageColor: "bg-orange-200",
     packagingType: "Bolsa 500g",
@@ -177,12 +192,12 @@ export const PRODUCTS: Product[] = [
     id: "betsy",
     name: "Betsy",
     category: ProductCategory.CONSUMER,
-    description: "Crema de arroz instantánea enriquecida para los más pequeños. Mezcla y listo.",
+    description: "Crema de arroz instantánea enriquecida para los más pequeños. Bebida nutritiva a base de arroz, mezcla y listo.",
     features: ["Con Vitaminas", "Rápida preparación", "Hipoalergénico"],
     nutritional: {
       protein: "7g",
-      carbs: "81.2g",
-      vitamins: ["A", "D", "C"]
+      vitamins: ["A", "C", "B1", "B2", "B3", "B9", "B12", "D"],
+      minerals: ["Hierro"]
     },
     imageColor: "bg-green-100",
     packagingType: "Bolsa 500g",
