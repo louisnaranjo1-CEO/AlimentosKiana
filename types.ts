@@ -30,4 +30,5 @@ export interface Distributor {
   name: string;
   location: string;
   type: 'Supermercado' | 'Mayorista' | 'Institucional';
+  logoUrl?: string;
 }

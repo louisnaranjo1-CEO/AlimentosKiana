@@ -63,7 +63,14 @@ function App() {
 
                 // 3. Fetch Distributors
                 const { data: distData } = await supabase.from('distributors').select('*').order('order');
-                if (distData) setDistributors(distData);
+                if (distData) {
+                    setDistributors(distData.map(d => ({
+                        name: d.name,
+                        location: d.location,
+                        type: d.type,
+                        logoUrl: d.logo_url
+                    })));
+                }
 
                 // 4. Fetch Settings
                 const { data: settingsData } = await supabase.from('site_settings').select('value').eq('key', 'whatsapp_number').single();
@@ -281,10 +288,18 @@ function App() {
                     <div className="flex flex-wrap justify-center gap-6 md:gap-12 opacity-60 hover:opacity-100 transition-opacity duration-500">
                         {distributors.map((dist, idx) => (
                             <div key={idx} className="flex flex-col items-center group cursor-default">
-                                <div className="w-44 h-24 bg-gray-50 rounded-xl flex items-center justify-center border border-gray-100 group-hover:border-kiana-green/30 group-hover:shadow-lg transition-all p-4">
-                                    <span className="font-heading font-bold text-lg text-gray-500 group-hover:text-kiana-dark text-center leading-tight">
-                                        {dist.name}
-                                    </span>
+                                <div className="w-44 h-28 bg-gray-50 rounded-xl flex items-center justify-center border border-gray-100 group-hover:border-kiana-green/30 group-hover:shadow-lg transition-all p-4 overflow-hidden">
+                                    {dist.logoUrl ? (
+                                        <img
+                                            src={dist.logoUrl}
+                                            alt={dist.name}
+                                            className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                                        />
+                                    ) : (
+                                        <span className="font-heading font-bold text-lg text-gray-500 group-hover:text-kiana-dark text-center leading-tight">
+                                            {dist.name}
+                                        </span>
+                                    )}
                                 </div>
                                 <span className="text-xs text-gray-400 mt-3 flex items-center gap-1 font-medium">
                                     <MapPin size={10} /> {dist.location}

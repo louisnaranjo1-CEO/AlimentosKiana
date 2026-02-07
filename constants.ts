@@ -3,12 +3,18 @@ import { Product, ProductCategory, Distributor } from './types';
 export const WHATSAPP_NUMBER = "584243533131"; // From PDF
 
 export const DISTRIBUTORS: Distributor[] = [
-  { name: "Makro Comercializadora", location: "Nacional", type: "Mayorista" },
-  { name: "Supermercados Luxor", location: "Centro", type: "Supermercado" },
-  { name: "Central Madeirense", location: "Nacional", type: "Supermercado" },
-  { name: "Organización Naciones Unidas (WFP)", location: "Internacional", type: "Institucional" },
-  { name: "Red de Distribución Los Llanos", location: "Guárico", type: "Mayorista" },
-  { name: "Automercados Plaza's", location: "Caracas", type: "Supermercado" },
+  {
+    name: "Red Vital",
+    location: "Nacional",
+    type: "Supermercado",
+    logoUrl: "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/red%20vital.png"
+  },
+  {
+    name: "Hiperlider",
+    location: "Nacional",
+    type: "Supermercado",
+    logoUrl: "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/hiperlider.png"
+  }
 ];
 
 export const ORGANIZATION_TYPES = [

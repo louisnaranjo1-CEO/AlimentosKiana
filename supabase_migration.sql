@@ -38,6 +38,7 @@ CREATE TABLE distributors (
     name TEXT NOT NULL,
     location TEXT NOT NULL,
     type TEXT NOT NULL,
+    logo_url TEXT,
     "order" INTEGER DEFAULT 0,
     created_at TIMESTAMPTZ DEFAULT NOW()
 );
@@ -88,13 +89,9 @@ INSERT INTO benefits (title, description, icon, "order") VALUES
 ('Desde el Corazón del País', 'Ubicados estratégicamente en Calabozo, llevamos nuestros alimentos a cada rincón de la nación con eficiencia.', 'Truck', 4);
 
 -- Distributors
-INSERT INTO distributors (name, location, type, "order") VALUES
-('Makro Comercializadora', 'Nacional', 'Mayorista', 1),
-('Supermercados Luxor', 'Centro', 'Supermercado', 2),
-('Central Madeirense', 'Nacional', 'Supermercado', 3),
-('Organización Naciones Unidas (WFP)', 'Internacional', 'Institucional', 4),
-('Red de Distribución Los Llanos', 'Guárico', 'Mayorista', 5),
-('Automercados Plaza''s', 'Caracas', 'Supermercado', 6);
+INSERT INTO distributors (name, location, type, logo_url, "order") VALUES
+('Red Vital', 'Nacional', 'Supermercado', 'https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/red%20vital.png', 1),
+('Hiperlider', 'Nacional', 'Supermercado', 'https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/hiperlider.png', 2);
 
 -- Settings
 INSERT INTO site_settings (key, value, description) VALUES
