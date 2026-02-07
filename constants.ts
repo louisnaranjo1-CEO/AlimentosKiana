@@ -95,12 +95,12 @@ export const PRODUCTS: Product[] = [
     id: "merengon-fresa",
     name: "Merengón Fresa",
     category: ProductCategory.CONSUMER,
-    description: "Bebida instantánea con el dulce sabor de la fresa. Lista para disfrutar, fortificada con el cariño que merecen los pequeños de la casa. Contiene azúcar.",
-    features: ["Contiene Azúcar", "Sabor Intenso", "Instantáneo", "Fortificado"],
+    description: "Bebida instantánea con el dulce sabor de la fresa. Lista para disfrutar, hecha con el cariño que merecen los pequeños de la casa. Contiene azúcar.",
+    features: ["Contiene Azúcar", "Sabor Intenso", "Instantáneo"],
     nutritional: {
+      calories: "370 kcal",
       protein: "9g",
-      vitamins: ["Complejo B"],
-      minerals: ["Calcio", "Hierro"]
+      carbs: "84g"
     },
     imageColor: "bg-pink-200",
     imageUrl: "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/2%20(2).png",
@@ -144,7 +144,7 @@ export const PRODUCTS: Product[] = [
     name: "Rico Cereal Arroz",
     category: ProductCategory.CONSUMER,
     description: "Línea de cereales infantiles. Alimento instantáneo especial para bebés a partir de los 6 meses. Enriquecido con vitaminas y minerales.",
-    features: ["Especial para bebés", "Desde los 6 meses", "Instantáneo", "Fortificado"],
+    features: ["Especial para bebés", "Desde los 6 meses", "Instantáneo"],
     nutritional: {
       protein: "14g",
       vitamins: ["A", "C", "B1", "B2", "B3", "B6", "B9", "B12", "D", "K"],
@@ -223,7 +223,7 @@ export const PRODUCTS: Product[] = [
     name: "ChiCha",
     category: ProductCategory.CONSUMER,
     description: "Bebida instantánea a base de arroz y leche, con el tradicional sabor venezolano. Dulce, espesa y nutritiva.",
-    features: ["Sabor Tradicional", "Instantáneo", "Fortificado"],
+    features: ["Sabor Tradicional", "Instantáneo"],
     nutritional: {
       protein: "5g",
       vitamins: ["A", "D"],

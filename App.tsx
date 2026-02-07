@@ -372,9 +372,21 @@ function App() {
 
                     <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 gap-4">
                         <p>&copy; {new Date().getFullYear()} Agropecuaria Kiana C.A. - J-00207338-1. Todos los derechos reservados.</p>
-                        <p className="font-medium">
-                            Página desarrollada por <span className="text-white">Louis Marketing</span>
-                        </p>
+                        <a
+                            href="https://louismarketingve.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-4 hover:opacity-80 transition-opacity group"
+                        >
+                            <p className="font-medium">
+                                Página desarrollada por <span className="text-white group-hover:text-kiana-yellow transition-colors">Louis Marketing</span>
+                            </p>
+                            <img
+                                src="https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/Grupo%2019.png"
+                                alt="Louis Marketing Logo"
+                                className="h-6 w-auto object-contain"
+                            />
+                        </a>
                     </div>
                 </div>
             </footer>
