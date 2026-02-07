@@ -27,20 +27,27 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) => {
       <div className={`h-48 w-full ${product.imageColor} flex items-center justify-center relative p-6 overflow-hidden`}>
         {/* Placeholder for Product Image */}
         <motion.div
-          className="w-32 h-40 bg-white/90 shadow-xl rounded-lg flex items-center justify-center text-center p-2 relative z-10"
+          className="w-32 h-44 bg-white/90 shadow-xl rounded-lg flex items-center justify-center text-center relative z-10 overflow-hidden"
           initial={{ rotate: 0 }}
           whileHover={{ rotate: 3, scale: 1.1 }}
           transition={{ type: "spring", stiffness: 300 }}
         >
-          {/* Logo fallback since we don't have product images yet */}
-          <div className="flex flex-col items-center justify-center gap-2">
+          {product.imageUrl ? (
             <img
-              src="https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/logo-color.png"
-              alt="Kiana"
-              className="h-12 w-auto object-contain opacity-80"
+              src={product.imageUrl}
+              alt={product.name}
+              className="w-full h-full object-contain p-2"
             />
-            <span className="font-heading font-bold text-kiana-dark text-sm leading-tight">{product.name}</span>
-          </div>
+          ) : (
+            <div className="flex flex-col items-center justify-center gap-2 p-2">
+              <img
+                src="https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/logo-color.png"
+                alt="Kiana"
+                className="h-12 w-auto object-contain opacity-80"
+              />
+              <span className="font-heading font-bold text-kiana-dark text-sm leading-tight">{product.name}</span>
+            </div>
+          )}
         </motion.div>
 
         {/* Hover overlay hint */}

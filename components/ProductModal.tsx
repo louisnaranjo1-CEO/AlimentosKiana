@@ -40,10 +40,18 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) => {
 
                     {/* Left Side: Visuals */}
                     <div className={`md:w-2/5 ${product.imageColor} p-8 flex flex-col items-center justify-center text-center relative`}>
-                        <div className="w-48 h-64 bg-white shadow-2xl rounded-xl flex items-center justify-center mb-6 transform hover:scale-105 transition-transform duration-500">
-                            <span className="font-heading font-extrabold text-2xl text-kiana-dark px-4">
-                                {product.name}
-                            </span>
+                        <div className="w-56 h-72 bg-white shadow-2xl rounded-xl flex items-center justify-center mb-6 transform hover:scale-105 transition-transform duration-500 overflow-hidden">
+                            {product.imageUrl ? (
+                                <img
+                                    src={product.imageUrl}
+                                    alt={product.name}
+                                    className="w-full h-full object-contain p-4"
+                                />
+                            ) : (
+                                <span className="font-heading font-extrabold text-2xl text-kiana-dark px-4">
+                                    {product.name}
+                                </span>
+                            )}
                         </div>
                         <div className="bg-white/90 backdrop-blur-md rounded-xl p-4 shadow-lg w-full max-w-xs">
                             <div className="flex items-center justify-between text-sm text-gray-600 mb-2 border-b border-gray-200 pb-2">

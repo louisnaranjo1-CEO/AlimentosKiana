@@ -50,6 +50,7 @@ function App() {
                         features: p.features, // JSONB comes as object/array
                         nutritional: p.nutritional, // JSONB
                         imageColor: p.image_color,
+                        imageUrl: p.image_url,
                         packagingType: p.packaging_type,
                         shelfLife: p.shelf_life,
                         isNew: p.is_new

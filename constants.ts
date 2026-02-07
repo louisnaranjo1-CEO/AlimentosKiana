@@ -70,6 +70,7 @@ export const PRODUCTS: Product[] = [
       minerals: ["Calcio", "Hierro", "Zinc", "Fósforo"]
     },
     imageColor: "bg-yellow-100",
+    imageUrl: "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/Lactokiana%20Front.png",
     packagingType: "Bolsa 1kg / 500g",
     shelfLife: "12 meses"
   },
