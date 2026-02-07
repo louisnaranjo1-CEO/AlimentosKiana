@@ -87,6 +87,7 @@ export const PRODUCTS: Product[] = [
       minerals: ["Calcio", "Fósforo", "Hierro", "Potasio"]
     },
     imageColor: "bg-orange-100",
+    imageUrl: "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/Lactokiana%20Maiz%20front.png",
     packagingType: "Bolsa 1kg",
     shelfLife: "12 meses"
   },
@@ -102,6 +103,7 @@ export const PRODUCTS: Product[] = [
       minerals: ["Calcio", "Hierro"]
     },
     imageColor: "bg-pink-200",
+    imageUrl: "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/2%20(2).png",
     packagingType: "Bolsa 400g",
     shelfLife: "12 meses"
   },
@@ -117,6 +119,7 @@ export const PRODUCTS: Product[] = [
       carbs: "86g"
     },
     imageColor: "bg-yellow-50",
+    imageUrl: "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/1%20(2).png",
     packagingType: "Bolsa 400g",
     shelfLife: "12 meses"
   },
@@ -132,6 +135,7 @@ export const PRODUCTS: Product[] = [
       carbs: "86g"
     },
     imageColor: "bg-amber-100",
+    imageUrl: "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/3%20(1).png",
     packagingType: "Bolsa 400g",
     shelfLife: "12 meses"
   },
@@ -147,6 +151,7 @@ export const PRODUCTS: Product[] = [
       minerals: ["Hierro", "Calcio", "Fósforo", "Zinc"]
     },
     imageColor: "bg-blue-50",
+    imageUrl: "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/Rico%20Cereal%20front.png",
     packagingType: "Bolsa 500g",
     shelfLife: "12 meses"
   },
@@ -162,6 +167,7 @@ export const PRODUCTS: Product[] = [
       minerals: ["Calcio", "Fósforo"]
     },
     imageColor: "bg-blue-100",
+    imageUrl: "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/Rica%20Avena%20vainilla%20front.png",
     packagingType: "Bolsa 500g",
     shelfLife: "12 meses"
   },
@@ -192,6 +198,7 @@ export const PRODUCTS: Product[] = [
       minerals: ["Hierro", "Calcio", "Fósforo", "Zinc"]
     },
     imageColor: "bg-orange-200",
+    imageUrl: "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/Fororo%20front.png",
     packagingType: "Bolsa 500g",
     shelfLife: "12 meses"
   },
@@ -207,6 +214,39 @@ export const PRODUCTS: Product[] = [
       minerals: ["Hierro"]
     },
     imageColor: "bg-green-100",
+    imageUrl: "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/Betsy%20front.png",
+    packagingType: "Bolsa 500g",
+    shelfLife: "12 meses"
+  },
+  {
+    id: "chicha",
+    name: "ChiCha",
+    category: ProductCategory.CONSUMER,
+    description: "Bebida instantánea a base de arroz y leche, con el tradicional sabor venezolano. Dulce, espesa y nutritiva.",
+    features: ["Sabor Tradicional", "Instantáneo", "Fortificado"],
+    nutritional: {
+      protein: "5g",
+      vitamins: ["A", "D"],
+      minerals: ["Calcio"]
+    },
+    imageColor: "bg-red-100",
+    imageUrl: "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/Chicha%20front.png",
+    packagingType: "Bolsa 500g",
+    shelfLife: "12 meses"
+  },
+  {
+    id: "choco-k",
+    name: "Choco K",
+    category: ProductCategory.CONSUMER,
+    description: "Bebida instantánea a base de cacao y leche. El compañero perfecto para desayunos llenos de alegría y energía.",
+    features: ["Contiene Leche y Azúcar", "Frío o Caliente", "Energía Instantánea"],
+    nutritional: {
+      protein: "8g",
+      vitamins: ["A", "D"],
+      minerals: ["Calcio"]
+    },
+    imageColor: "bg-amber-800",
+    imageUrl: "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/ChocoK%20front.png",
     packagingType: "Bolsa 500g",
     shelfLife: "12 meses"
   },
@@ -224,6 +264,7 @@ export const PRODUCTS: Product[] = [
       minerals: ["Calcio", "Hierro"]
     },
     imageColor: "bg-yellow-400",
+    imageUrl: "https://fqpwkgrmifvfogxdzxaq.supabase.co/storage/v1/object/public/Kiana%20productos/Bokaditos%20mini-bag.png",
     packagingType: "Empaque 35g",
     shelfLife: "6 meses"
   },
